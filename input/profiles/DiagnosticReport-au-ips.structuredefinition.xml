@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="DiagnosticReport-uv-ips"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile">
+    <valueCanonical value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-diagnosticreport"/>
+  </extension>
+	<url value="http://hl7.org.au/fhir/ips/StructureDefinition/DiagnosticReport-au-ips"/>
+	<name value="DiagnosticReportAuIps"/>
+	<title value="DiagnosticReport (AU IPS)"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+  <description value="This profile is based on the UV profile, with Australian rules added as well (by reference to the Australian profile)"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="DiagnosticReport"/>
+	<baseDefinition value="http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="DiagnosticReport.subject">
+			<path value="DiagnosticReport.subject"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Patient-au-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
+			</type>
+		</element>
+		<element id="DiagnosticReport.performer">
+			<path value="DiagnosticReport.performer"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Practitioner-au-ips"/> 
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/PractitionerRole-au-ips"/> 
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Organization-au-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/> 
+			</type>
+		</element>
+		<element id="DiagnosticReport.specimen">
+			<path value="DiagnosticReport.specimen"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Specimen-au-ips"/>
+			</type>
+		</element>
+		<element id="DiagnosticReport.result:observation-results">
+			<path value="DiagnosticReport.result"/>
+			<sliceName value="observation-results"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Observation-results-laboratory-au-ips"/>
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Observation-results-pathology-au-ips"/>
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Observation-results-radiology-au-ips"/>
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Observation-results-au-ips"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

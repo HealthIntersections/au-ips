@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="Observation-results-pathology-uv-ips"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile">
+    <valueCanonical value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-diagnosticresult"/>
+  </extension>
+	<url value="http://hl7.org.au/fhir/ips/StructureDefinition/Observation-results-pathology-au-ips"/>
+	<name value="ObservationResultsPathologyAuIps"/>
+	<title value="Observation Results: pathology (AU IPS)"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+  <description value="This profile is based on the UV profile, with Australian rules added as well (by reference to the Australian profile)"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Observation.subject">
+			<path value="Observation.subject"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Patient-au-ips"/>
+			</type>
+		</element>
+		<element id="Observation.performer">
+			<path value="Observation.performer"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Practitioner-au-ips"/> 
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/PractitionerRole-au-ips"/> 
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Organization-au-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/> 
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Patient-au-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+			</type>
+		</element>
+		<element id="Observation.specimen">
+			<path value="Observation.specimen"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Specimen-au-ips"/>
+			</type>
+		</element>	
+		<element id="Observation.hasMember">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Observation-results-pathology-au-ips"/>
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Observation-results-au-ips"/>
+			</type>
+		</element>	
+	</differential>
+</StructureDefinition>
