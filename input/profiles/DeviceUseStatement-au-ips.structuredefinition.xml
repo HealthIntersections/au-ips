@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<id value="DeviceUseStatement-uv-ips"/>
+	<id value="DeviceUseStatement-au-ips"/>
 	<url value="http://hl7.org.au/fhir/ips/StructureDefinition/DeviceUseStatement-au-ips"/>
 	<name value="DeviceUseStatementAuIps"/>
 	<title value="Device Use Statement (AU IPS)"/>

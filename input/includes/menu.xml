@@ -3,18 +3,5 @@
 		<a href="index.html">Home</a>
 	</li>
   <li><a href="toc.html">Table of Contents</a></li>
-	<li>
-		<a href="ipsStructure.html">The "IPS"</a>
-	</li>
-	<li class="dropdown">
-		<a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts</a>
-		<ul class="dropdown-menu">
-			<li>
-				<a href="StructureDefinition-Composition-su-ips.html">The IPS Composition</a>
-			</li>
-			<li>
-				<a href="artifacts.html">IPS library</a>
-			</li>
-		</ul>
-	</li> 
+	<li><a href="artifacts.html">AU IPS library</a></li>
 </ul>

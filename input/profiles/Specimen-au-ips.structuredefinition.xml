@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<id value="Specimen-uv-ips"/>
+	<id value="Specimen-au-ips"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile">
     <valueCanonical value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-specimen"/>
   </extension>
@@ -20,7 +20,7 @@
 			<path value="Specimen.subject"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Patient-uv-ips"/>
+				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Patient-au-ips"/>
 			</type>
 		</element>
 	</differential>

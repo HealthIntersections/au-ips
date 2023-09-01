@@ -1,2 +1,10 @@
 
 .DS_Store
+
+temp/
+
+output/
+
+template/
+
+input-cache/

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="Immunization-uv-ips"/>
+	<id value="Immunization-au-ips"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile">
     <valueCanonical value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-immunization"/>
   </extension>
@@ -19,7 +19,7 @@
 			<path value="Immunization.patient"/>
 			<type>
 				<code value="Reference"/>
- 				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Patient-su-ips"/>
+ 				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Patient-au-ips"/>
 			</type>
 		</element>
 	</differential>

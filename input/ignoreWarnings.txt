@@ -1,2 +1,5 @@
 == Suppressed Messages ==
 
+# No examples in this one
+The Implementation Guide contains no examples for this profile
+

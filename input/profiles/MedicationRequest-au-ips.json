@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "MedicationRequest-uv-ips",
+  "id": "MedicationRequest-au-ips",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
     "valueCanonical" : "http://hl7.org.au/fhir/core/StructureDefinition/au-core-medicationrequest"
   }],
-  "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-au-ips",
+  "url": "http://hl7.org.au/fhir/ips/StructureDefinition/MedicationRequest-au-ips",
   "version": "1.0.0",
   "name": "MedicationRequestIPS",
   "title": "Medication Request (IPS)",
@@ -27,7 +27,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-au-ips"
+              "http://hl7.org.au/fhir/ips/StructureDefinition/Patient-au-ips"
             ]
           }
         ]

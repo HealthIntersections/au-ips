@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="Device-uv-ips"/>
+	<id value="Device-au-ips"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile">
     <valueCanonical value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-device-system"/>
   </extension>
