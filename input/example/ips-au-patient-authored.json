@@ -1,5 +1,6 @@
 {
   "resourceType" : "Bundle",
+  "language" : "en-AU",
   "id" : "af76b7d1-e785-45e0-8c63-f87bc3c6b333",
   "identifier" : {
     "system" : "urn:ietf:rfc:3986",
