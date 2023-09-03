@@ -1,0 +1,614 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "af76b7d1-e785-45e0-8c63-f87bc3c6b333",
+  "identifier" : {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:uuid:af76b7d1-e785-45e0-8c63-f87bc3c6b333"
+  },
+  "type" : "document",
+  "timestamp" : "2023-09-03T19:48:02.609Z",
+  "entry" : [
+    {
+      "fullUrl" : "http://healthintersections.com.au/IPS/Composition/cmp1",
+      "resource" : {
+        "resourceType" : "Composition",
+        "id" : "cmp1",
+        "status" : "final",
+        "type" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "60591-5"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/p1"
+        },
+        "date" : "2023-09-03",
+        "author" : [
+          {
+            "display" : "Grahame Grieve"
+          }
+        ],
+        "title" : "Patient Passport (IPS)",
+        "section" : [
+          {
+            "title" : "Functional Concerns",
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "http://loinc.org",
+                  "code" : "47420-5"
+                }
+              ]
+            },
+            "text" : {
+              "status" : "generated",
+              "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Patient has concerns around Vision</li><li>Patient has a Communication Device</li></ul></div>"
+            },
+            "entry" : [
+              {
+                "reference" : "Condition/cnd2"
+              },
+              {
+                "reference" : "Condition/cnd3"
+              }
+            ]
+          },
+          {
+            "title" : "Care Directives",
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "http://loinc.org",
+                  "code" : "42348-3"
+                }
+              ]
+            },
+            "text" : {
+              "status" : "generated",
+              "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Care Advocate:Kathryn Grieve. Contacts: email: <a href=\"mailto:kathryng@gmail.com\">kathryng@gmail.com</a>, mobile: <a href=\"tel:+61411623555\">+61411623555</a> (legal power of attorney)</li><li>Consent: Please resuscitate if necessary</li><li>Consent: Patient agrees to be an organ donor</li><li>Consent: Patient agrees to accept a blood tranfusion if necessary</li></ul></div>"
+            },
+            "entry" : [
+              {
+                "reference" : "RelatedPerson/rp4"
+              },
+              {
+                "reference" : "Consent/cnst5"
+              },
+              {
+                "reference" : "Consent/cnst6"
+              },
+              {
+                "reference" : "Consent/cnst7"
+              }
+            ]
+          },
+          {
+            "title" : "Medications",
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "http://loinc.org",
+                  "code" : "10160-0"
+                }
+              ]
+            },
+            "text" : {
+              "status" : "generated",
+              "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">No information is provided about the patient's medications</div>"
+            },
+            "entry" : [
+              {
+                "reference" : "MedicationStatement/ms1"
+              }
+            ]
+          },
+          {
+            "title" : "Allergies",
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "http://loinc.org",
+                  "code" : "48765-2"
+                }
+              ]
+            },
+            "text" : {
+              "status" : "generated",
+              "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">No information is provided about the patient's allergies and intolerances</div>"
+            },
+            "entry" : [
+              {
+                "reference" : "AllergyIntolerance/ai1"
+              }
+            ]
+          },
+          {
+            "title" : "Medical Problems",
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "http://loinc.org",
+                  "code" : "11450-4"
+                }
+              ]
+            },
+            "text" : {
+              "status" : "generated",
+              "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">No information is provided about the patient's medical problem list</div>"
+            },
+            "entry" : [
+              {
+                "reference" : "Condition/cnd1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://healthintersections.com.au/IPS/Patient/p1",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "p1",
+        "text" : {
+          "status" : "extensions",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient: Grahame Grieve, born 1969-04-13,  (Male gender, he/him). National ID 2342-67345-23463456 for AU<br/>Cultural background: Scottish<br/>Contacts: email: <a href=\"mailto:grahameg@gmail.com\">grahameg@gmail.com</a>, mobile: <a href=\"tel:+61411867065\">+61411867065</a><br/>Next of Kin: Kathryn Grieve, contacts: email: <a href=\"mailto:kathryng@gmail.com\">kathryng@gmail.com</a>, mobile: <a href=\"tel:+61411623555\">+61411623555</a></div>"
+        },
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "value",
+                "valueCodeableConcept" : {
+                  "coding" : [
+                    {
+                      "system" : "http://snomed.info/sct",
+                      "code" : "446151000124109",
+                      "display" : "Male gender identity"
+                    }
+                  ]
+                }
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/individual-genderIdentity"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "value",
+                "valueCodeableConcept" : {
+                  "coding" : [
+                    {
+                      "system" : "http://loinc.org",
+                      "code" : "LA29518-0",
+                      "display" : "he/him/his/his/himself"
+                    }
+                  ]
+                }
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/individual-pronouns"
+          },
+          {
+            "url" : "http://healthintersections.com.au/fhir/StructureDefinition/patient-cultural-background",
+            "valueString" : "Scottish"
+          }
+        ],
+        "identifier" : [
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code" : "NIIP",
+                  "display" : "National Insurance Payor Identifier (Payor)"
+                }
+              ]
+            },
+            "value" : "2342-67345-23463456"
+          }
+        ],
+        "name" : [
+          {
+            "text" : "Grahame Grieve"
+          }
+        ],
+        "telecom" : [
+          {
+            "system" : "email",
+            "value" : "grahameg@gmail.com"
+          },
+          {
+            "system" : "phone",
+            "value" : "+61411867065",
+            "use" : "mobile"
+          }
+        ],
+        "birthDate" : "1969-04-13",
+        "address" : [
+          {
+            "country" : "AU"
+          }
+        ],
+        "contact" : [
+          {
+            "name" : {
+              "text" : "Kathryn Grieve"
+            },
+            "telecom" : [
+              {
+                "system" : "email",
+                "value" : "kathryng@gmail.com"
+              },
+              {
+                "system" : "phone",
+                "value" : "+61411623555",
+                "use" : "mobile"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://healthintersections.com.au/IPS/MedicationStatement/ms1",
+      "resource" : {
+        "resourceType" : "MedicationStatement",
+        "id" : "ms1",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">No information is provided about the patient's medications</div>"
+        },
+        "status" : "active",
+        "medicationCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+              "code" : "no-medication-info",
+              "display" : "No information about medications"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/p1"
+        },
+        "_effectiveDateTime" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode" : "not-applicable"
+          }]
+        }
+      }
+    },
+    {
+      "fullUrl" : "http://healthintersections.com.au/IPS/AllergyIntolerance/ai1",
+      "resource" : {
+        "resourceType" : "AllergyIntolerance",
+        "id" : "ai1",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">No information is provided about the patient's allergies and intolerances</div>"
+        },
+        "clinicalStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code" : "inactive",
+              "display" : "Inactive"
+            }
+          ]
+        },
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+              "code" : "no-allergy-info",
+              "display" : "No information about allergies"
+            }
+          ]
+        },
+        "patient" : {
+          "reference" : "Patient/p1"
+        }
+      }
+    },
+    {
+      "fullUrl" : "http://healthintersections.com.au/IPS/Condition/cnd1",
+      "resource" : {
+        "resourceType" : "Condition",
+        "id" : "cnd1",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">No information is provided about the patient's medical problems</div>"
+        },
+        "clinicalStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "inactive",
+              "display" : "Inactive"
+            }
+          ]
+        },
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+              "code" : "no-problem-info",
+              "display" : "No information about problems"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/p1"
+        }
+      }
+    },
+    {
+      "fullUrl" : "http://healthintersections.com.au/IPS/Condition/cnd2",
+      "resource" : {
+        "resourceType" : "Condition",
+        "id" : "cnd2",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Condition for Grahame Grieve, 1969-04-13(Male:he/him), National ID 2342-67345-23463456</p><p>Patient has concerns around Vision</p></div>"
+        },
+        "clinicalStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active",
+              "display" : "Active"
+            }
+          ]
+        },
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "397540003",
+              "display" : "Visual impairment"
+            }
+          ],
+          "text" : "Patient has concerns around Vision"
+        },
+        "subject" : {
+          "reference" : "Patient/p1"
+        }
+      }
+    },
+    {
+      "fullUrl" : "http://healthintersections.com.au/IPS/Condition/cnd3",
+      "resource" : {
+        "resourceType" : "Condition",
+        "id" : "cnd3",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Condition for Grahame Grieve, 1969-04-13(Male:he/him), National ID 2342-67345-23463456</p><p>Patient has a Communication Device</p></div>"
+        },
+        "clinicalStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active",
+              "display" : "Active"
+            }
+          ]
+        },
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "719369003",
+              "display" : "Uses communication device"
+            }
+          ],
+          "text" : "Patient has a Communication Device"
+        },
+        "subject" : {
+          "reference" : "Patient/p1"
+        }
+      }
+    },
+    {
+      "fullUrl" : "http://healthintersections.com.au/IPS/RelatedPerson/rp4",
+      "resource" : {
+        "resourceType" : "RelatedPerson",
+        "id" : "rp4",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Care Advocate for Grahame Grieve, 1969-04-13(Male:he/him), National ID 2342-67345-23463456:</p>Kathryn Grieve. Contacts: email: <a href=\"mailto:kathryng@gmail.com\">kathryng@gmail.com</a>, mobile: <a href=\"tel:+61411623555\">+61411623555</a> (legal power of attorney)</div>"
+        },
+        "patient" : {
+          "reference" : "Patient/p1"
+        },
+        "relationship" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "code" : "HPOWATT",
+                "display" : "healthcare power of attorney"
+              }
+            ]
+          }
+        ],
+        "name" : [
+          {
+            "text" : "Grahame Grieve"
+          }
+        ],
+        "telecom" : [
+          {
+            "system" : "email",
+            "value" : "kathryng@gmail.com"
+          },
+          {
+            "system" : "phone",
+            "value" : " 61411623555",
+            "use" : "mobile"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://healthintersections.com.au/IPS/Consent/cnst5",
+      "resource" : {
+        "resourceType" : "Consent",
+        "id" : "cnst5",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Consent for Grahame Grieve, 1969-04-13(Male:he/him), National ID 2342-67345-23463456: </p>Please resuscitate if necessary</div>"
+        },
+        "status" : "active",
+        "scope" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+              "code" : "treatment",
+              "display" : "Treatment"
+            }
+          ]
+        },
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+                "code" : "acd",
+                "display" : "Advance Directive"
+              }
+            ]
+          }
+        ],
+        "patient" : {
+          "reference" : "Patient/p1"
+        },
+        "policyRule" : {
+          "text" : "Unknown Policy"
+        },
+        "provision" : {
+          "type" : "permit",
+          "code" : [
+            {
+              "coding" : [
+                {
+                  "system" : "http://snomed.info/sct",
+                  "code" : "439569004",
+                  "display" : "Resuscitation"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl" : "http://healthintersections.com.au/IPS/Consent/cnst6",
+      "resource" : {
+        "resourceType" : "Consent",
+        "id" : "cnst6",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Consent for Grahame Grieve, 1969-04-13(Male:he/him), National ID 2342-67345-23463456: </p>Patient agrees to be an organ donor</div>"
+        },
+        "status" : "active",
+        "scope" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+              "code" : "treatment",
+              "display" : "Treatment"
+            }
+          ]
+        },
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+                "code" : "acd",
+                "display" : "Advance Directive"
+              }
+            ]
+          }
+        ],
+        "patient" : {
+          "reference" : "Patient/p1"
+        },
+        "policyRule" : {
+          "text" : "Unknown Policy"
+        },
+        "provision" : {
+          "type" : "permit",
+          "code" : [
+            {
+              "coding" : [
+                {
+                  "system" : "http://snomed.info/sct",
+                  "code" : "1148553005",
+                  "display" : "Post-mortem organ donation"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl" : "http://healthintersections.com.au/IPS/Consent/cnst7",
+      "resource" : {
+        "resourceType" : "Consent",
+        "id" : "cnst7",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Consent for Grahame Grieve, 1969-04-13(Male:he/him), National ID 2342-67345-23463456: </p>Patient agrees to accept a blood tranfusion if necessary</div>"
+        },
+        "status" : "active",
+        "scope" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+              "code" : "treatment",
+              "display" : "Treatment"
+            }
+          ]
+        },
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+                "code" : "acd",
+                "display" : "Advance Directive"
+              }
+            ]
+          }
+        ],
+        "patient" : {
+          "reference" : "Patient/p1"
+        },
+        "policyRule" : {
+          "text" : "Unknown Policy"
+        },
+        "provision" : {
+          "type" : "permit",
+          "code" : [
+            {
+              "coding" : [
+                {
+                  "system" : "http://snomed.info/sct",
+                  "code" : "116859006",
+                  "display" : "Blood transfusion"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
